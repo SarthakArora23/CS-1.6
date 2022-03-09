@@ -1,0 +1,12 @@
+SET NEWLINE=^& echo.
+FIND /C /I "dl.csmania.ro" %WINDIR%\system32\drivers\etc\hosts
+IF %ERRORLEVEL% NEQ 0 ECHO %NEWLINE%^127.0.0.1                   dl.csmania.ro>>%WINDIR%\system32\drivers\etc\hosts
+
+SET NEWLINE=^& echo.
+FIND /C /I "ms-shadow.ro" %WINDIR%\system32\drivers\etc\hosts
+IF %ERRORLEVEL% NEQ 0 ECHO %NEWLINE%^127.0.0.1                   ms-shadow.ro>>%WINDIR%\system32\drivers\etc\hosts
+
+
+SET NEWLINE=^& echo.
+FIND /C /I "stockdownload.eu" %WINDIR%\system32\drivers\etc\hosts
+IF %ERRORLEVEL% NEQ 0 ECHO %NEWLINE%^127.0.0.1                   stockdownload.eu>>%WINDIR%\system32\drivers\etc\hosts
